@@ -27,7 +27,7 @@ while [[ $# -gt 0 ]]; do
     key="$1"
 
     case $key in
-        -s|--search_query)
+        -s|--search)
             search_query="$2"
             shift
             shift
@@ -40,7 +40,7 @@ while [[ $# -gt 0 ]]; do
         -h|--help)
             echo -e "\nUsage: bash google-cli.sh [options]\n"
             echo "Options:"
-            echo " -s, --search_query    Specifies the search query for Google search."
+            echo " -s, --search    Specifies the search query for Google search."
             echo "                          Single Search: site:google.com"
             echo "                          Multiple Search: site:google.com \"ext:php\" (use quotes)"
             echo " -o, --output                  Output file path"
@@ -57,7 +57,7 @@ done
 if [ -z "$search_query" ]; then
     echo -e "\nUsage: bash google-cli.sh [options]\n"
     echo "Options:"
-    echo " -s, --search_query    Specifies the search query for Google search."
+    echo " -s, --search    Specifies the search query for Google search."
     echo "                          Single Search: site:google.com"
     echo "                          Multiple Search: site:google.com \"ext:php\" (use quotes)"
     echo " -o, --output                  Output file path"
