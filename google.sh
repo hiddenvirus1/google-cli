@@ -38,7 +38,7 @@ while [[ $# -gt 0 ]]; do
             shift
             ;;
         -h|--help)
-            echo -e "\nUsage: bash google-cli.sh [options]\n"
+            echo -e "\nUsage: bash google.sh [options]\n"
             echo "Options:"
             echo " -s, --search    Specifies the search query for Google search."
             echo "                          Single Search: site:google.com"
@@ -55,7 +55,7 @@ while [[ $# -gt 0 ]]; do
 done
 
 if [ -z "$search_query" ]; then
-    echo -e "\nUsage: bash google-cli.sh [options]\n"
+    echo -e "\nUsage: bash google.sh [options]\n"
     echo "Options:"
     echo " -s, --search    Specifies the search query for Google search."
     echo "                          Single Search: site:google.com"
